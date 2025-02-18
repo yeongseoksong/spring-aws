@@ -11,10 +11,12 @@ phases:
       commands:
         - echo $(basename ./build/libs/*.jar)
         - pwd
+
 artifacts:
   files:
     - build/libs/*.jar
-
+    - appspec.yml
+    - deploy.sh
   discard-paths: yes
 
 cache:
