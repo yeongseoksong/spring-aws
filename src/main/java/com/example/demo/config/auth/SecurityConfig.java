@@ -25,7 +25,7 @@ public class SecurityConfig  {
                 .oauth2Login(ol->ol.userInfoEndpoint(uie->uie.userService(customOAuth2UserService)));
         // 인가(접근권한) 설정
         http.authorizeHttpRequests((requests)-> requests
-                .requestMatchers("/","/css/**","/images/**","/js/**","/h2-console/**").permitAll()
+                .requestMatchers("/","/css/**","/images/**","/js/**","/h2-console/**","/profile").permitAll()
                 .requestMatchers("/api/v1/**").hasRole(Role.USER.name())
                 .anyRequest().authenticated());
 
