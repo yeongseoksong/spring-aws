@@ -16,7 +16,7 @@ artifacts:
   files:
     - build/libs/*.jar
     - appspec.yml
-    - deploy.sh
+    - script/*.sh
 
   discard-paths: yes
 
