@@ -17,6 +17,7 @@ artifacts:
     - build/libs/*.jar
     - appspec.yml
     - deploy.sh
+  name: BuildArtifact
   discard-paths: yes
 
 cache:
