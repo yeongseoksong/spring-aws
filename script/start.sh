@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
-soruce ${ABSDIR}/profile.sh
+source ${ABSDIR}/profile.sh
 
 REPOSITORY=/home/ubuntu/app/step3
 
@@ -16,7 +16,7 @@ JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
 echo "> JAR Name: $JAR_NAME"
 echo "> JAR_NAME  에 실행 권한 추가"
 
-chmode +x $JAR_NAME
+chmod +x $JAR_NAME
 
 echo "> JAR_NAME 실행"
 
