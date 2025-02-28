@@ -64,7 +64,6 @@ class PostsApiControllerTest {
 
     @Test
     @WithMockUser(roles="USER")
-
     public void Posts_등록() throws Exception {
         String title= "title";
         String content ="content";
